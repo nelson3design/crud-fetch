@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+
+.box{
+    width: 100%;
+    display: flex;
+   align-items: start;
+   gap: 100px;
+   justify-content: center;
+   padding: 50px 100px;
+}
+
+.registrar{
+    width: 30%;
+   
+
+}
+.registrar div{
+    width: 100%;
+   text-align: center;
+   background-color: royalblue;
+    font-size: 25px;
+    color: white;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.listagem{
+    width: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+}
+
+.form{
+  
+    padding: 20px;
+    border: 1px solid royalblue;
+}
+
+.form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.form input:focus{
+    outline: 1px solid royalblue;
+}
+
+.form .btn{
+    width: 100%;
+   height: 30px;
+text-transform: uppercase;
+cursor: pointer;
+background-color: royalblue;
+border: none;
+color: white;
+}
+
+thead{
+    background-color: royalblue;
+}
+.theader{
+  
+   
+    color: white;
+    height: 40px;
+}
+
+
+.tbody:nth-child(even){
+    background-color: rgb(214, 214, 214);
+    color: black;
+  
+}
+
+.tbody{
+  text-align: center;
+    height: 40px;
+    background-color: white;
+}
+
+
+.tbody span button{
+  
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+table{
+  
+    background-color: royalblue;
+}
+
+
+
+.search{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.pes{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+   border: 2px solid royalblue;
+
+}
+
+.pes:focus{
+  
+  outline: none;
+}
+
+.pes:active{
+    outline: none;
+}
+
+@media (max-width:992px) {
+    .search{
+    width: 100%;
+   
+}
+   .base{
+       display: grid;
+   }
+    .box{
+    width: 90vw;
+    display: flex;
+   align-items: start;
+   gap: 30px;
+   justify-content: center;
+   padding: 30px 0px;
+   flex-direction: column;
+   margin: auto;
+ 
+}
+.registrar{
+    width: 100%;
+   
+
+}
+
+.listagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+ table{
+     
+        background: none!important;
+    }
+    table tr th{
+        display:none;
+    }
+
+    table, tr, td{
+        display:block;
+        width: 90vw;
+      
+    }
+
+    table tr{
+        margin-bottom: 15px;
+    }
+
+    table td{
+       text-align: right;
+      padding: 10px;
+       position: relative;
+      border: 1px solid royalblue;
+    }
+
+    .theader{
+     background: none!important;
+    height: auto;
+}
+
+thead{
+   background: none!important;
+}
+
+
+
+.tbody{
+  
+    height: auto;
+   
+   
+}
+
+
+  table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+         padding: 0 10px;
+         font-size: 18px;
+        font-weight: 700;
+    }
+
+}
+
